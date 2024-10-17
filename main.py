@@ -9,8 +9,8 @@ from tkinter import messagebox
 # This sets up the connection to Spotify's API using OAuth
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
     #find these 3 lines below on spotify developer app on website
-    client_id="057de2c74c4046cbbb8a5ea1694bba9b",
-    client_secret="360c43b852e945aa94c028e29dd8f646",
+    client_id="{CLIENT_ID_HERE}",
+    client_secret="{CLIENT_SECRET_HERE}",
     redirect_uri="http://localhost:8888/callback",
     # Permissions needed to read playlists
     scope="user-library-read playlist-read-private"
